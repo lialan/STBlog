@@ -51,7 +51,7 @@ class Comments extends ST_Auth_Controller {
 		/** 权限确认 */
 		$this->auth->exceed('contributor');
 		
-		$this->load->helper('json');
+		$this->load->helper(array('json', 'json'));
 		
 		$this->_data['parentPage'] = 'manage-posts';
 		$this->_data['currentPage'] = 'manage-comments';

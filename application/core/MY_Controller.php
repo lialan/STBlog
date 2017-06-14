@@ -124,6 +124,7 @@ class ST_Auth_Controller extends CI_Controller {
 
 		/** 加载后台控制器公共模型 */
 		$this->load->model('users_mdl');
+		$this->users_mdl->check_exist('name', 'test', 'test');
 		
 		/** 加载后台控制器helper */
 		

@@ -97,6 +97,10 @@ class Posts extends ST_Controller {
      */
 	private function _prepare_post($post)
 	{
+		$this->session;
+		$this->plugin;
+		$this->database;
+
 		/** 日志发表日期 */
 		$post->published = setting_item('post_date_format') 
 								? date(setting_item('post_date_format'), $post->created) 
